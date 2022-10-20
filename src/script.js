@@ -51,7 +51,7 @@ function updateCity(event) {
           </div>
         </div>
         </br>
-        <a href="/">All Citties</a>`;
+        <a href="/">All Cities</a>`;
 }
 
 let citiesSelect = document.querySelector("#city");
