@@ -1,11 +1,11 @@
 function updateTime() {
-  let funchalElement = document.querySelector("#funchal");
-  if (funchalElement) {
-    let funchalDateElement = funchalElement.querySelector(".date");
-    let funchalTimeElement = funchalElement.querySelector(".time");
-    let funchalTime = moment().tz("Atlantic/Madeira");
-    funchalDateElement.innerHTML = funchalTime.format("MMMM Do YYYY");
-    funchalTimeElement.innerHTML = funchalTime.format(
+  let madridElement = document.querySelector("#madrid");
+  if (madridElement) {
+    let madridDateElement = madridElement.querySelector(".date");
+    let madridTimeElement = madridElement.querySelector(".time");
+    let madridTime = moment().tz("Europe/Madrid");
+    madridDateElement.innerHTML = madridTime.format("MMMM Do YYYY");
+    madridTimeElement.innerHTML = madridTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
