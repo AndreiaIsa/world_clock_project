@@ -1,11 +1,11 @@
 function updateTime() {
-  let madridElement = document.querySelector("#madrid");
-  if (madridElement) {
-    let madridDateElement = madridElement.querySelector(".date");
-    let madridTimeElement = madridElement.querySelector(".time");
-    let madridTime = moment().tz("Europe/Madrid");
-    madridDateElement.innerHTML = madridTime.format("MMMM Do YYYY");
-    madridTimeElement.innerHTML = madridTime.format(
+  let shanghaiElement = document.querySelector("#shanghai");
+  if (shanghaiElement) {
+    let shanghaiDateElement = shanghaiElement.querySelector(".date");
+    let shanghaiTimeElement = shanghaiElement.querySelector(".time");
+    let shanghaiTime = moment().tz("Asia/Shanghai");
+    shanghaiDateElement.innerHTML = shanghaiTime.format("MMMM Do YYYY");
+    shanghaiTimeElement.innerHTML = shanghaiTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
@@ -17,6 +17,17 @@ function updateTime() {
     let newYorkTime = moment().tz("America/New_York");
     newYorkDateElement.innerHTML = newYorkTime.format("MMMM Do YYYY");
     newYorkTimeElement.innerHTML = newYorkTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+
+  let johannesburgElement = document.querySelector("#johannesburg");
+  if (johannesburgElement) {
+    let johannesburgDateElement = johannesburgElement.querySelector(".date");
+    let johannesburgTimeElement = johannesburgElement.querySelector(".time");
+    let johannesburgTime = moment().tz("Africa/Johannesburg");
+    johannesburgDateElement.innerHTML = johannesburgTime.format("MMMM Do YYYY");
+    johannesburgTimeElement.innerHTML = johannesburgTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
