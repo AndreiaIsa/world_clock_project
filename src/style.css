@@ -9,7 +9,7 @@ body {
   max-width: 500px;
   margin: 40px auto;
   background-color: #fff;
-  opacity: 0.8;
+  opacity: 0.9;
   padding: 20px;
   box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
   border-radius: 10px;
@@ -83,4 +83,42 @@ footer {
   display: block;
   margin: 0 auto;
   border-radius: 5px;
+}
+
+@media (max-width: 474px) {
+  .container {
+    max-width: 270px;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .city {
+    font-size: 18px;
+  }
+
+  .date {
+    font-size: 10px;
+  }
+
+  .time {
+    font-size: 10px;
+  }
+
+  .time small {
+    font-size: 10px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
 }
